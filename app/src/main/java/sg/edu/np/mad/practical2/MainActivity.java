@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
         Log.v(TAG, "on Create!!");
         User user = new User("john","Male",1,false);
         Button follow = findViewById(R.id.follow);
-        if(user.followed == false){
+        if(user.Followed == false){
             follow.setText("Follow");
         }
         else{
@@ -27,13 +27,13 @@ public class MainActivity extends AppCompatActivity {
         follow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(user.followed == false){
+                if(user.Followed == false){
                     follow.setText("UnFollow");
-                    user.followed=true;
+                    user.Followed=true;
                 }
                 else
                 {
-                    user.followed=false;
+                    user.Followed=false;
                     follow.setText("Follow");
 
                 }

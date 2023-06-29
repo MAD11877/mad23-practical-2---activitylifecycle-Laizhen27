@@ -1,50 +1,50 @@
 package sg.edu.np.mad.practical2;
 
-public class User {
-    public String name= "John";
+import java.io.Serializable;
 
-    public String description = "Male";
+public class User implements Serializable {
 
-    public int id = 1;
-
-    public boolean followed = true;
+    public String Name;
+    public String Description;
+    public int UserID;
+    public static boolean Followed;
 
     public String getName() {
-        return name;
+        return Name;
     }
 
     public void setName(String name) {
-        this.name = name;
+        Name = name;
     }
 
     public String getDescription() {
-        return description;
+        return Description;
     }
 
     public void setDescription(String description) {
-        this.description = description;
+        Description = description;
     }
 
-    public int getId() {
-        return id;
+    public int getUserID() {
+        return UserID;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setUserID(int userID) {
+        UserID = userID;
     }
 
     public boolean isFollowed() {
-        return followed;
+        return Followed;
     }
 
     public void setFollowed(boolean followed) {
-        this.followed = followed;
+        Followed = followed;
     }
 
-    public User(String name, String description, int id, boolean followed) {
-        this.name = name;
-        this.description = description;
-        this.id = id;
-        this.followed = followed;
+    public User(String name, String description, int userID, boolean followed) {
+        Name = name;
+        Description = description;
+        UserID = userID;
+        Followed = followed;
     }
 }
