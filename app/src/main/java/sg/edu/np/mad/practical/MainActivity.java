@@ -1,4 +1,4 @@
-package sg.edu.np.mad.practical2;
+package sg.edu.np.mad.practical;
 
 import static android.content.ContentValues.TAG;
 
